@@ -2,7 +2,7 @@ import CaseStudyCard from '@/components/CaseStudyCard';
 import { CaseStudy } from '@/types/case-study';
 
 const amsData: CaseStudy = {
-  title: "ams (Attendance Management Systems)",
+  title: "ams (Attendance Management System)",
   description: "打刻・休憩管理・勤怠一覧確認ができる勤怠管理アプリ",
   techTags: ["Laravel", "MySQL", "Docker", "AWS EC2",],
   imageSrc: "/images/ams.png",
