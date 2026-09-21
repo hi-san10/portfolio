@@ -3,8 +3,8 @@ import { CaseStudy } from '@/types/case-study';
 
 const amsData: CaseStudy = {
   title: "ams (Attendance Management System)",
-  description: "打刻・休憩管理・勤怠一覧確認ができる勤怠管理アプリ",
-  techTags: ["Laravel", "MySQL", "Docker", "AWS EC2",],
+  description: "認証・打刻・休憩管理・勤怠一覧の確認・CSV出力ができる勤怠管理アプリ",
+  techTags: ["Laravel", "MySQL", "Docker", "AWS EC2"],
   imageSrc: "/images/ams.png",
   imageAlt: "amsの管理者による1ユーザーの勤怠一覧画面のスクリーンショット",
   href: "case-studies/ams",
