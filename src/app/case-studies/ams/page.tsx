@@ -3,8 +3,16 @@ import Section from "@/components/Section";
 const tags = ["Laravel", "MySQL", "Docker", "AWS EC2"];
 
 const links = [
+  {
+    label: "Demo",
+    href: "http://ec2-35-72-97-239.ap-northeast-1.compute.amazonaws.com",
+  },
   { label: "GitHub", href: "https://github.com/hi-san10/ams" },
-  // デプロイ後に追加: { label: "Demo", href: "https://..." },
+];
+
+const testAccounts = [
+  { role: "一般ユーザー", email: "sato@mail.com", password: "99999999" },
+  { role: "管理者", email: "admin@mail.com", password: "00000000" },
 ];
 
 export default function AmsPage() {
@@ -60,6 +68,18 @@ export default function AmsPage() {
         <p>
           FormRequestやサービス層への責務の分離によって、コントローラーを肥大化させない書き方と、トランザクションを用いたデータ整合性の考え方を、実装を通して整理できました。
         </p>
+      </Section>
+      <Section title="テストアカウント">
+        <p>
+          Demoはこちらのアカウントでログインして確認できます。会員登録はメール認証が必要なため、テストアカウントでの閲覧をお願いします。
+        </p>
+        <ul className="mt-2 list-disc pl-5">
+          {testAccounts.map((account) => (
+            <li key={account.role}>
+              {account.role}: {account.email} / {account.password}
+            </li>
+          ))}
+        </ul>
       </Section>
       <ul className="mt-10 flex gap-4 text-sm">
         {links.map((link) => (
